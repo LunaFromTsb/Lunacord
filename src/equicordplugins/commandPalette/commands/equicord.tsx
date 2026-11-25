@@ -1,30 +1,30 @@
 /*
- * Vencord, a Discord client mod
- * Copyright (c) 2026 Vendicated and contributors
- * SPDX-License-Identifier: GPL-3.0-or-later
+- Vencord, a Discord client mod
+- Copyright (c) 2026 Vendicated and contributors
+- SPDX-License-Identifier: GPL-3.0-or-later
  */
 
 import type { PaletteCommand } from "../api/types";
 import { BoltIcon, GearIcon, PaintIcon, RestartIcon } from "../ui/icons";
 import { openSettingsPage } from "./openSettings";
 
-const SECTION = "Equicord";
+const SECTION = "Lunacord";
 
-export const equicordCommands: PaletteCommand[] = [
+export const lunacordCommands: PaletteCommand[] = [
     {
-        id: "equicord.settings",
-        title: "Open Equicord Settings",
+        id: "lunacord.settings",
+        title: "Open Lunacord Settings",
         section: SECTION,
-        keywords: ["equicord", "vencord", "settings"],
+        keywords: ["lunacord", "vencord", "settings"],
         icon: GearIcon,
         actions: [{
             id: "run",
-            label: "Open Equicord Settings",
+            label: "Open Lunacord Settings",
             run: () => void openSettingsPage("equicord_main")
         }]
     },
     {
-        id: "equicord.quickCss",
+        id: "lunacord.quickCss",
         title: "Open QuickCSS",
         section: SECTION,
         keywords: ["css", "quickcss", "editor", "style"],
@@ -36,7 +36,7 @@ export const equicordCommands: PaletteCommand[] = [
         }]
     },
     {
-        id: "equicord.updater",
+        id: "lunacord.updater",
         title: "Open Updater",
         section: SECTION,
         keywords: ["update", "updater", "version"],
@@ -49,7 +49,7 @@ export const equicordCommands: PaletteCommand[] = [
         }]
     },
     {
-        id: "equicord.changelog",
+        id: "lunacord.changelog",
         title: "Open Changelog",
         section: SECTION,
         keywords: ["changelog", "news", "whats new"],
@@ -61,7 +61,7 @@ export const equicordCommands: PaletteCommand[] = [
         }]
     },
     {
-        id: "equicord.restart",
+        id: "lunacord.restart",
         title: "Restart Discord",
         section: SECTION,
         keywords: ["restart", "reload", "refresh"],
